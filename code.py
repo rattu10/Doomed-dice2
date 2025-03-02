@@ -21,8 +21,10 @@ def probability(combinations):
 
 # Function to undoom dice with Loki's rule
 def undoom_dice():
-    new_die_a = [1, 1, 2, 2, 3, 4]  # Die A with max spots 4
-    new_die_b = [1, 2, 3, 4, 5, 6]  # Die B with normal spots
+    # Die A with max spots 4
+    new_die_a = [1, 1, 2, 2, 3, 4] 
+    # Die B with normal spots
+    new_die_b = [1, 2, 3, 4, 5, 6]  
     return new_die_a, new_die_b
 
 @app.route('/combinations', methods=['GET'])
